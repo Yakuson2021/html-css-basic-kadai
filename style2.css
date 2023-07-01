@@ -1,0 +1,44 @@
+    /* Main Visual */
+    #main img {
+      display: block;
+      margin: 0 auto;
+      width: 1200px;
+      height: 500px;
+      object-fit: cover;
+    }
+    
+    /* ③ Alternate Section Layout with Images */
+    .alternate-section div.container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+    }
+    
+    .alternate-section div.container img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    .alternate-section div.container div.text {
+      flex: 1;
+      padding: 50px;
+    }
+      
+    header {
+      background-color: #000; /* 背景を黒色に設定 */
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
+
+    header nav a {
+      margin: 0 15px;
+      color: #fff; /* 文字色を白に設定 */
+      font-weight: bold; /* 太字に設定 */
+    }
+    
+    #main h1 {
+      font-size: 48px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
