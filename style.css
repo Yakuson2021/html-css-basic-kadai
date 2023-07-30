@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #top {
   width: 800px;
   background-color: #dcc9f4;
@@ -107,4 +108,116 @@
   /*position: absolute;*/
   margin-top: 0;
   margin-bottom: 0;
+=======
+/*〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓*/
+/*PC用のstyle*/
+/*〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓*/
+
+body {
+  font-size: 20px;
+}
+h1 {
+  color: rgb(255,255,255);
+}
+header {
+  margin-bottom: 20px;
+  background-color: rgb(244, 79, 79);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contents img {
+  margin: 10px 0;
+  width: 70%;
+}  
+
+h1, p, body {
+  margin: 0;
+}
+
+p, a {
+  font-size: 20px;
+}
+
+main {
+  margin: 10px;
+}
+
+#parent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contents {
+    /* 四角要素を囲む線の設定 */
+    border: 3px solid rgb(238, 204, 204); 
+    /* 親要素の25%の幅にする設定 */
+    flex-basis: 25%; 
+    /* 要素内の余白（パディング）を上下10px、左右15pxに設定 */
+    padding: 10px 15px; 
+    /* 要素外の余白（マージン）を上下20px、左右0に設定 */
+    margin: 20px 0; 
+    /* 中の要素が中央揃えになるように設定 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+  font-size: 25px;
+  border-bottom: dotted 3px rgb(236, 122, 122);
+}
+
+h2::before {
+  content: '\25CF';
+  color: rgb(239, 111, 139);
+}
+
+.contents p:nth-of-type(2)::first-letter{
+  font-weight:  bold;
+  color: rgb(97, 206, 249);
+} 
+
+footer {
+  background-color: rgb(244, 79, 79);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  color: rgb(255, 255, 255);
+}
+
+footer a:hover {
+  color: rgb(245, 178, 168);
+}
+
+footer a:visited {
+  color: rgb(193, 234, 251);
+}
+
+/*〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓*/
+/*スマホ用のstyle（media Queries 768）*/
+/*〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓*/
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 25px;
+  }
+  
+  h2 {
+  font-size: 30px;
+  }
+  
+  p {
+  font-size: 25px;
+  }
+  
+  #parent {
+    display: flex;
+    flex-direction: column;
+  }
+>>>>>>> 363515a (20230730)
 }
